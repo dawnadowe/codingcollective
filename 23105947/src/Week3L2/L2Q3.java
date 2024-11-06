@@ -32,7 +32,8 @@ public class L2Q3 {
         for (int i = 0; i < n; i++) {
             sum += randArray[i];
         }
-        //int sum = randArray[0] + randArray[1] + randArray[2]; (alternative, but this is possible cs small num of elements in array)
+        //int sum = randArray[0] + randArray[1] + randArray[2]; 
+        //(alternative, but this is possible cs small num of elements in array)
         
         System.out.printf("The sum is: "+ sum);
             

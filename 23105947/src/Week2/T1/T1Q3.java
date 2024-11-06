@@ -12,7 +12,8 @@ public class T1Q3 {
     
     public static void main(String[] args) {
        
-        //Print the pass/fail grade based on the mark entered by user. The passing mark is at least 40.
+        //Print the pass/fail grade based on the mark entered by user. 
+        //The passing mark is at least 40.
         
         int mark;
         Scanner sc = new Scanner(System.in);
