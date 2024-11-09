@@ -19,7 +19,7 @@ public class V1Q1 {
         int num = sc.nextInt();
         int sum = num;
         int largest= num;
-        int secondLargest = Integer.MIN_VALUE;
+        int secondLargest = 0;
         int count = 1;
         int count2 = 0;
 
@@ -53,14 +53,17 @@ public class V1Q1 {
                 NegativeNum = true;
             }
 
-
         }
-        
-        
+
         System.out.println("The largest number is " + largest);
         System.out.println("The occurence count of the largest number is " + count);
+        if (secondLargest ==0){
+            System.out.println("There is no second largest");
+        }
+        else {
         System.out.println("The second largest number is " + secondLargest);
         System.out.println("The occurence count of the second largest number is " + count2);
+        }
         System.out.println("The total sum of all numbers is " + sum);
         if (NegativeNum == true)
             System.out.println("Negative numbers were entered.");
