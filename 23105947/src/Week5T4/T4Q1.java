@@ -4,6 +4,7 @@
  */
 package Week5T4;
 import java.util.Scanner;
+import java.util.Random;
 
 /**
  *
@@ -13,13 +14,14 @@ public class T4Q1 {
     
 //Write statements for each of the following
     
-//a. Find the largest integer n so that n3 is less than 2000.
+//a. Find the largest integer n so that n^3 is less than 2000.
     
 //    public static void main(String[] args) {
 //        
 //        int n = 0;
 //        while (Math.pow(n,3) < 2000){
-//            n++;         
+//            n++;
+//            
 //        }
 //        n--;
 //        System.out.println("The largest integer n is " + n);
@@ -40,6 +42,24 @@ public class T4Q1 {
     
 //c. Display a 4-by-5 matrix using random number within 0 to 100.
     
+//    public static void main(String[] args) {
+//        
+//        Random rand = new Random();
+//        
+//
+//        for (int i = 0; i < 5;i++){
+//            int count =0;
+//            while (count<4){
+//                int randNum = rand.nextInt(101);
+//                System.out.print(randNum + " ");
+//                count++;
+//            }
+//            
+//            System.out.println();
+//
+//        }
+//        
+//    }
  
     
 //d. Compute the sum of numbers from 1 to a given number.
