@@ -13,61 +13,29 @@ public class V1Q1 {
     
     public static void main(String[] args) {
         
-        boolean NegativeNum = false;
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter numbers: ");
+        System.out.println("Enter a number: ");
         int num = sc.nextInt();
-        int sum = num;
-        int largest= num;
-        int secondLargest = 0;
-        int count = 1;
-        int count2 = 0;
-
+        int digitalRoot = 0;
+        int remaining = num;
+        int number;
         
-        if (num<0){
-                NegativeNum = true;}
-        
-        while (num != 0){
-            num = sc.nextInt();
-            sum += num;
+        while (remaining > 0){
+            number = num % 10;
+            remaining = num / 10;
+            digitalRoot += number;
+            num = remaining;
             
-            if(num>largest){
-                secondLargest = largest;
-                count2 = count;
-                largest = num;
-                count = 1;
-            }
-            
-            else if (num == largest){
-                count++;
-            } 
-            else if (num > secondLargest){
-                secondLargest = num;
-                count2 = 1;
-            }
-            else if (num == secondLargest){
-                count2++;
-            }
-            
-            if (num<0){
-                NegativeNum = true;
+            if (remaining < 9 && digitalRoot > 9){
+                remaining = digitalRoot;
+                num = digitalRoot;
+                digitalRoot = 0;
+                
             }
 
         }
-
-        System.out.println("The largest number is " + largest);
-        System.out.println("The occurence count of the largest number is " + count);
-        if (secondLargest ==0){
-            System.out.println("There is no second largest");
-        }
-        else {
-        System.out.println("The second largest number is " + secondLargest);
-        System.out.println("The occurence count of the second largest number is " + count2);
-        }
-        System.out.println("The total sum of all numbers is " + sum);
-        if (NegativeNum == true)
-            System.out.println("Negative numbers were entered.");
         
+        System.out.println("The sum of digits until single digit is: " + digitalRoot);
     }
     
 }
