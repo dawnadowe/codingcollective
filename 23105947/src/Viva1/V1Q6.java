@@ -7,7 +7,9 @@ package Viva1;
 import java.util.Scanner;
 
 
-public class V1Q6 {public static void main(String[] args) {
+public class V1Q6 {
+    
+    public static void main(String[] args) {
         
         boolean NegativeNum = false; 
         
@@ -19,8 +21,8 @@ public class V1Q6 {public static void main(String[] args) {
         int sum = num;
         int largest= num;
         int secondLargest = 0;
-        int count = 1;
-        int count2 = 0;
+        int count = 1;              //occurence for largest
+        int count2 = 0;             //occurence for second largest
 
         //to know if user entered a negative number for summary purposes
         if (num<0){
