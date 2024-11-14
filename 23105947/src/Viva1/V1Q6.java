@@ -73,8 +73,5 @@ public class V1Q6 {
         else
             System.out.println("No negative numbers were entered.");
         
-    }
-    
-    
-    
+    } 
 }
