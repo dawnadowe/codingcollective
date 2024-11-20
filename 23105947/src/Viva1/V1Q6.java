@@ -29,7 +29,7 @@ public class V1Q6 {
                 NegativeNum = true;}
         
         //loop for the remaining scores
-        while (num != 0){
+        do{
             num = sc.nextInt();
             sum += num;
             
@@ -57,6 +57,7 @@ public class V1Q6 {
             }
 
         }
+        while (num != 0);
 
         System.out.println("The largest number is " + largest);
         System.out.println("The occurence count of the largest number is " + count);
