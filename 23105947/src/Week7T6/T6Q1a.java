@@ -14,15 +14,15 @@ public class T6Q1a {
     
     public static void main(String[] args) {
         
-        int max = findMax(12,25,19);
+        int max = findMax(40,60,60);
         System.out.println("The maximum number is: " + max);
     }
     
     public static int findMax (int a, int b, int c){
         int largest = a;
-        if (a<b)
+        if (b >= a && b >= c)
             largest = b;
-        else if (a<c)
+        else if (c >= a && c >= b)
             largest = c;
         return largest;
     }

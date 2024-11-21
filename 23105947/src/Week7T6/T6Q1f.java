@@ -24,8 +24,8 @@ public class T6Q1f {
         
         // Display the random numbers from the array
         System.out.println("Generated random numbers:");
-        for (int num : randomNumbers) {
-            System.out.println(num);
+        for (int j = 0; j< randomNumbers.length; j++) {
+            System.out.println(randomNumbers[j]);
         }
     }
 
